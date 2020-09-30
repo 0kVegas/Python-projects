@@ -6,3 +6,4 @@ elif int(num) == 5:
     print('wow this number is 5')
 else:
     print('wow this number is smaller than 5')
+print('5 is actually a relatively small number so take it as you will')
