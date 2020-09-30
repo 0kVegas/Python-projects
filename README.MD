@@ -7,5 +7,6 @@ This is an online project to understand how github works and making projects whi
     - Fizz Buzz problem
     - Different algorithms
     
-
- 
+# Projects Done so far
+ - Fizz Buzz
+ - Fibonacci 
