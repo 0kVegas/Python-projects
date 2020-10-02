@@ -1,12 +1,13 @@
 word = 'hello'
+word_replaced = False
 word_length = len(word)
 guess = input('enter letter: ')
 
 
 # -----Replacing System-----
-def word_replace(replace):
+def word_replace(replaced):
     word_display = ""
-    for letter in replace:
+    for letter in replaced:
         if letter in 'abcdefghijklmnopqrstuvwxyz':
             word_display = word_display + '_'
         else:
@@ -18,13 +19,15 @@ correct = word_replace(word)
 
 
 # -----Re Replace-----
-def replace():
-    correct.replace(correct[found], guess)
+def replace(words):
+    changed = correct.replace(correct[words], guess)
+    return changed
 
 
 # -----Right Words-----
 def right_words(attempt):
     global correct
+    global word_replaced
     for letter in attempt:
         if letter in word:
             for i in range(word_length - 1):
@@ -34,7 +37,7 @@ def right_words(attempt):
                 found = word.find(guess, check)
 
                 while not word_replaced:
-                    replace()
+                    replace(found)
         else:
             correct = correct
     return correct
