@@ -6,6 +6,7 @@ This is an online project to understand how github works and making projects whi
     - Fibonacci machine 
     - Fizz Buzz problem
     - Different algorithms
+    - hang man
     
 # Projects Done so far
  - Fizz Buzz
