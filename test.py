@@ -20,8 +20,10 @@ correct = word_replace(word)
 
 # -----Re Replace-----
 def replace(words):
+    global changed
     changed = correct.replace(correct[words], guess)
-    return changed
+    word_replaced = True
+    return changed, word_replaced
 
 
 # -----Right Words-----
@@ -38,13 +40,16 @@ def right_words(attempt):
 
                 while not word_replaced:
                     replace(found)
+            correct = changed
         else:
             correct = correct
     return correct
 
 
 while correct != word:
+    statement = correct
     guess = input('enter letters: ')
+    replace(guess)
     word_replace(word)
     right_words(guess)
-    print(correct)
+    print(statement)
