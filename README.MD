@@ -11,3 +11,5 @@ This is an online project to understand how github works and making projects whi
 # Projects Done so far
  - Fizz Buzz
  - Fibonacci 
+ - Hang Man
+ 

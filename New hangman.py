@@ -24,6 +24,7 @@ wrong_letters = ''
 error = 0
 
 
+# -----Playing Board-----
 def hanged(fails):
     if fails == 0:
         print('  ___________')
@@ -76,6 +77,7 @@ def hanged(fails):
         print(' / \ ')
 
 
+# -----Replacement-----
 def replacement(replaced):
     global display
     for letter in replaced:
@@ -89,6 +91,7 @@ def replacement(replaced):
 print(replacement(word))
 
 
+# -----Putting Words Back-----
 def back():
     global guess, word_list, new_word, found, display, wrong_letters, error, word
     while word != new_word:
@@ -121,4 +124,5 @@ def back():
                 error = error + 1
 
 
+# -----Final Result-----
 print(back())
