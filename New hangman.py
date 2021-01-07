@@ -10,8 +10,7 @@ potential_words = {
     6: 'location'
 }
 # -----Random Word Selection-----
-basic = [1, 2, 3, 4, 5, 6]
-list_num = random.randint(1, 7)
+list_num = random.randint(1, 6)
 # -----Variables-----
 word = potential_words[list_num]
 guess = ''
@@ -97,6 +96,7 @@ def back():
     while word != new_word:
         print(hanged(error))
         if error == 6:
+            print(word)
             return 'YOU LOSE'
         else:
             guess = input('give me a letter: ')
